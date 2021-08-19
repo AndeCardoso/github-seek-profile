@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import useGithub from "./hooks/github-hooks";
+import Layout from "./components/layout";
+import Profile from "./components/profile";
+import NoSearch from "./components/no-search";
+import Repositories from "./components/repositories"
+import { memo } from 'react'
 
-function App() {
+const App = () => {
+  const { githubState } = useGithub();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      {githubState.hasUser ? (
+        <>
+          {githubState.loading ? (
+            <p>Loading</p>
+          ) : (
+            <>
+              <Profile />
+              <Repositories />
+            </>
+          )}
+        </>
+      ) : (
+        <NoSearch />
+      )}
+    </Layout>
   );
-}
+};
 
-export default App;
+export default memo(App);
