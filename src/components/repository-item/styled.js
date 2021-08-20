@@ -30,5 +30,12 @@ export const WrapperLink = styled.a`
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0;
+  margin-left: 25px;
   color: #B3B3B3;
+`;
+
+export const WrapperIn = styled.div`
+  display: flex;
+  padding: 15px;
+
 `;

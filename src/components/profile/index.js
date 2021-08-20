@@ -8,7 +8,13 @@ const Profile = () => {
 
     return (
         <S.Wrapper>
-            <S.WrapperImage src={githubState.user.avatar} alt="Avatar do usuário" />
+            <a
+            href={githubState.user.html_url}
+            target="_blank"
+            rel="noreferrer"
+            >
+                <S.WrapperImage src={githubState.user.avatar} alt="Avatar do usuário" />
+            </a>
             <S.WrapperInfoUser>
                 <div>
                     <h1>{githubState.user.name}</h1>
@@ -37,7 +43,7 @@ const Profile = () => {
                         target="_blank"
                         rel="noreferrer"
                         >
-                            {githubState.user.blog}
+                        {githubState.user.blog}
                         </a>
                     </S.WrapperUserGeneric>
                 </div>

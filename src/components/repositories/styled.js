@@ -49,6 +49,6 @@ WrapperTabPanel.tabsRole = "TabPanel";
 
 export const WrapperList = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 `;

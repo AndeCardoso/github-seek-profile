@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  border-radius: 9px;
+  width: 600px;
   margin: 50px;
+  background: rgba(176,188,196, 0.4);
 `;
 
 export const WrapperInfoUser = styled.div`
@@ -37,7 +40,7 @@ export const WrapperUserGeneric = styled.div`
   }
   a {
     font-size: 18px;
-    color: blue;
+    color: #B3B3B3;
     font-weight: bold;
   }
 `;
@@ -47,4 +50,5 @@ export const WrapperImage = styled.img`
   width: 200px;
   margin: 8px;
   border: solid 5px black;
+  background-color: black;
 `;

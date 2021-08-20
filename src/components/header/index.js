@@ -9,7 +9,9 @@ const Header = () => {
     const [usernameForSearch, setUsernameForSearch] = useState();
 
     const submitGetUser = () => {
-        if (!usernameForSearch) return;
+        if (!usernameForSearch) {
+            window.location.reload();
+        }
         return getUser(usernameForSearch);
     };
     
@@ -22,11 +24,11 @@ const Header = () => {
                 <S.Searching>
                     <Input
                     type="search"
-                    placeholder="Digite o nome do perfil para busca..."
+                    placeholder="Digite o perfil que você busca..."
                     onChange={(event) => setUsernameForSearch(event.target.value)}
                     />
                     <Button type="submit" onClick={submitGetUser}>
-                        Seek!
+                        Busque!
                     </Button>
                 </S.Searching>
             </S.Wrapper>
