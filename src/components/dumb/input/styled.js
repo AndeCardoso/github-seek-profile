@@ -10,4 +10,8 @@ export const Input = styled.input`
     color: black;
     border: none;
     border-radius: 8px;
+    @media(max-width: 800px) {
+        width: 75%;
+        font-size: 15px;
+    }
 `;

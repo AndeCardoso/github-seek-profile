@@ -14,7 +14,15 @@ export const SiteName = styled.div`
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-    margin: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+  @media(max-width: 800px) {
+    width: 90vw;
+    font-size: 30px;
+    text-align: center;
+  }
+
 `;
 
 export const Searching = styled.div`

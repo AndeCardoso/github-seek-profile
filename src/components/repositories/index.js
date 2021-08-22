@@ -26,8 +26,8 @@ const Repositories = () => {
                     selectedTabPanelClassName="is-selected"
                 >
                     <S.WrapperTabList>
-                        <S.WrapperTab>Repositories</S.WrapperTab>
-                        <S.WrapperTab>Starred</S.WrapperTab>
+                        <S.WrapperTab>Repositórios</S.WrapperTab>
+                        <S.WrapperTab>Favoritos</S.WrapperTab>
                     </S.WrapperTabList>
                     <S.WrapperTabPanel>
                         <S.WrapperList>
@@ -35,7 +35,7 @@ const Repositories = () => {
                                 <RepositoryItem
                                     key={item.id}
                                     name={item.name}
-                                    linkToRepo={item.full_name}
+                                    linkToRepo={item.html_url}
                                     fullName={item.full_name}
                                 />
                             ))}
@@ -47,7 +47,7 @@ const Repositories = () => {
                                 <RepositoryItem
                                     key={item.id}
                                     name={item.name}
-                                    linkToRepo={item.full_name}
+                                    linkToRepo={item.html_url}
                                     fullName={item.full_name}
                                 />
                             ))}
@@ -55,7 +55,7 @@ const Repositories = () => {
                     </S.WrapperTabPanel>
                 </S.WrapperTabs>
             ) : (
-                <></>
+                <div></div>
             )}
         </>
     )

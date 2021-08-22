@@ -24,7 +24,7 @@ const Header = () => {
                 <S.Searching>
                     <Input
                     type="search"
-                    placeholder="Digite o perfil que você busca..."
+                    placeholder="Digite o perfil..."
                     onChange={(event) => setUsernameForSearch(event.target.value)}
                     />
                     <Button type="submit" onClick={submitGetUser}>

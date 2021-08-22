@@ -32,6 +32,7 @@ export const WrapperLink = styled.a`
   margin: 8px 0;
   margin-left: 25px;
   color: #B3B3B3;
+  word-break: break-word;
 `;
 
 export const WrapperIn = styled.div`
