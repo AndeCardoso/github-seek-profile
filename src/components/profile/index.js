@@ -38,6 +38,7 @@ const Profile = () => {
                             <span>{githubState.user.location}</span>
                         </S.WrapperUserGeneric>
                         <S.WrapperUserGeneric>
+                            <div>
                             <h3>Blog/Site:</h3>
                             <a
                             href={githubState.user.blog}
@@ -46,6 +47,7 @@ const Profile = () => {
                             >
                             {githubState.user.blog}
                             </a>
+                            </div>
                         </S.WrapperUserGeneric>
                     {/* </div> */}
                 </S.WrapperInfoUser>

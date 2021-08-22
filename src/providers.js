@@ -1,5 +1,4 @@
 import App from './App';
-// import Footer from './components/footer';
 import { ResetCss } from './global/ResetCss';
 import  GithubProvider from './providers/github-provider';
 
@@ -8,7 +7,6 @@ const Providers = () => {
         <main>
             <GithubProvider>
                 <App />
-                {/* <Footer /> */}
                 <ResetCss />
             </GithubProvider>
         </main>

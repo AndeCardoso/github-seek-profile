@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: 150px;
+  height: 200px;
   align-content: center;
 `;
 
@@ -37,6 +37,9 @@ export const WrapperLink = styled.a`
 
 export const WrapperIn = styled.div`
   display: flex;
-  padding: 15px;
-
+  padding: 10px;
 `;
+
+export const WrapperDescription = styled.div`
+  overflow: hidden;
+`; 

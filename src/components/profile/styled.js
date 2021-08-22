@@ -67,6 +67,7 @@ export const WrapperUserGeneric = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+  word-break: break-word;
   h3 {
     margin-right: 8px;
   }
@@ -74,7 +75,6 @@ export const WrapperUserGeneric = styled.div`
     font-size: 18px;
     color: #B3B3B3;
     font-weight: bold;
-    word-break: break-word;
   }
 `;
 

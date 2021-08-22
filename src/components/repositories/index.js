@@ -37,6 +37,7 @@ const Repositories = () => {
                                     name={item.name}
                                     linkToRepo={item.html_url}
                                     fullName={item.full_name}
+                                    description={item.description}
                                 />
                             ))}
                         </S.WrapperList>
@@ -49,6 +50,7 @@ const Repositories = () => {
                                     name={item.name}
                                     linkToRepo={item.html_url}
                                     fullName={item.full_name}
+                                    description={item.description}
                                 />
                             ))}
                         </S.WrapperList>

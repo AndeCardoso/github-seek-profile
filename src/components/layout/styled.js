@@ -6,9 +6,7 @@ export const WrapperLayout = styled.section`
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 3px;
     height: 99.2vh;
-    width: 95vw;
     background-color: #1a1a1a;
     color: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
